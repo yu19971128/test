@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="styleSheet"  href="./index.css" />
+ 
+</head>
+<body>
+    <div class="iconfont box1">hello</div>
+    <i class="iconfont">&#xf7fc;</i>
+    <script>
+    Object.prototype.objCustom = function() {}; 
+    Array.prototype.arrCustom = function() {};
+
+    let iterable = [3, 5, 7];
+    iterable.foo = 'hello';
+    console.log(iterable)
+    for (let i in iterable) {
+    console.log(i); // logs 0, 1, 2, "foo", "arrCustom", "objCustom"
+    }
+
+    console.log("-----------********-----------")
+
+    for(let i of iterable){
+        console.log(i)
+    }
+    </script>
+</body>
+</html>
