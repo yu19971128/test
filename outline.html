@@ -9,10 +9,16 @@
 <style>
     .searchbox{
         outline:none !important; 
-         border:none;
+         
     }
 </style>
 <body>
-    <input class="searchbox" type="text">
+    <input class="searchbox" id="sear" type="text">
 </body>
+<script>
+    let sear= document.getElementById("sear").onfocus = function(){
+        console.log(this)
+    }
+  
+</script>
 </html>
